@@ -1,0 +1,51 @@
+<!--pages/math/math.wxml-->
+<view class="container">
+  <view class="card">
+    <view class="formula-card">
+      <text class="formula-text">{{a}} {{op}} {{b}}</text>
+    </view>
+  </view>
+  <view class="card">
+    <view class="img-container" style="left:{{imgLeft}}px;top:{{imgTop}}px;visibility:{{imgHid}}">
+      <image class="rst-img"  mode="scaleToFill" src="{{rstImage}}"></image>
+    </view>
+    <view class="button-group">
+      <view class="button-item">
+        <button class="rst-btn" id='0' style="visibility:{{btnHid[0]}}" bindtap="verify">0</button>
+      </view>
+      <view class="button-item">
+        <button class="rst-btn" id='1' style="visibility:{{btnHid[1]}}" bindtap="verify">1</button>
+      </view>
+      <view class="button-item">
+        <button class="rst-btn" id='2' style="visibility:{{btnHid[2]}}" bindtap="verify">2</button>
+      </view>
+      <view class="button-item">
+        <button class="rst-btn" id='3' style="visibility:{{btnHid[3]}}" bindtap="verify">3</button>
+      </view>
+      <view class="button-item">
+        <button class="rst-btn" id='4' style="visibility:{{btnHid[4]}}" bindtap="verify">4</button>
+      </view>
+      <view class="button-item">
+        <button class="rst-btn" id='5' style="visibility:{{btnHid[5]}}" bindtap="verify">5</button>
+      </view>
+      <view class="button-item">
+        <button class="rst-btn" id='6' style="visibility:{{btnHid[6]}}" bindtap="verify">6</button>
+      </view>
+      <view class="button-item">
+        <button class="rst-btn" id='7' style="visibility:{{btnHid[7]}}" bindtap="verify">7</button>
+      </view>
+      <view class="button-item">
+        <button class="rst-btn" id='8' style="visibility:{{btnHid[8]}}" bindtap="verify">8</button>
+      </view>
+      <view class="button-item">
+        <button class="rst-btn" id='9' style="visibility:{{btnHid[9]}}" bindtap="verify">9</button>
+      </view>
+      <view class="button-item">
+        <button class="rst-btn" id='10' style="visibility:{{btnHid[10]}}" bindtap="verify">10</button>
+      </view> 
+      <view class="button-item">
+        <button class="rst-btn next-btn" id='next' bindtap="next">></button>
+      </view> 
+    </view>
+  </view>
+</view>

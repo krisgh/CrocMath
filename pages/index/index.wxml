@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="selector">
+    <picker class="select" bindchange="pickerChange" value="{{selectValue}}" range="{{practise}}">
+      <view class="picker">
+        {{practise[selectValue]}}
+      </view>
+    </picker>
+  </view>
+  <view class="card">
+    <view class="thumbnails">
+      <view wx:key="id" wx:for="{{thumbnails}}">
+        <view id="{{index}}" class="{{item.style}}" bindtap="picPicker">
+          <image class="thum-pic" src="{{item.path}}"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="button">
+    <button class="next-btn" size="default" bindtap="btnNext" hover-class="button-hover"> > </button>
+  </view>
+</view>
